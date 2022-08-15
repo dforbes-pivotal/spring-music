@@ -1,0 +1,13 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: spring-music
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: spring-music
+spec:
+  source:
+    git:
+      url: https://github.com/dforbes-pivotal/spring-music.git
+      ref:
+        branch: master
