@@ -1,0 +1,4 @@
+site_name: Spring Music
+site_url: https://github.com/dforbes-pivotal/spring-music
+nav:
+  - Home: index.md
