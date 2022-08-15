@@ -1,0 +1,41 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: spring-music
+  description: Spring Music Application
+spec:
+  owner: tanzu-globals
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-music
+  description: Spring Music
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - tanzu
+    - demo
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-music'
+    'backstage.io/techdocs-ref': 'dir:.'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: tanzu-globals
+  system: spring-music
+  # providesApis: 
+  #   - petclinic-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: donaldf
+spec:
+  profile:
+    displayName: Donald R Forbes
+    email: donaldf@vmware.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  memberOf: [tanzu-globals]
+---
