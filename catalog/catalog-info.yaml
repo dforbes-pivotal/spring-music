@@ -31,11 +31,11 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: donaldf
+  name: dforbes
 spec:
   profile:
     displayName: Donald R Forbes
-    email: donaldf@vmware.com
+    email: dforbes@piovotal.io
     picture: https://example.com/staff/jenny-with-party-hat.jpeg
   memberOf: [tanzu-globals]
 ---
