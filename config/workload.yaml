@@ -11,3 +11,6 @@ spec:
       url: https://github.com/dforbes-pivotal/spring-music.git
       ref:
         branch: master
+  params:
+    - name: gitops_ssh_secret
+      value: dforbes-pivotal-https
