@@ -28,14 +28,3 @@ spec:
   # providesApis: 
   #   - petclinic-api
 ---
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: dforbes
-spec:
-  profile:
-    displayName: Donald R Forbes
-    email: dforbes@piovotal.io
-    picture: https://example.com/staff/jenny-with-party-hat.jpeg
-  memberOf: [tanzu-globals]
----
