@@ -13,4 +13,4 @@ spec:
         branch: master
   params:
     - name: gitops_ssh_secret
-      value: dforbes-pivotal-https
+      value: git-https
